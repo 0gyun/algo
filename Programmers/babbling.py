@@ -29,7 +29,7 @@ def solution(babbling):
     for words in babbling:
         if len(words) == 1 or len(words) > 10: # 조카가 발음할 수 있는 최소 단어는 2자 이상, 모든 단어를 한번씩 발음하면 최대 10자여서 예외처리
             continue
-        words = words.replace("aya", " ", 1) # 예를 들어 wayaoo를 w oo로 바꾸게 되어 치환이후 상황 고려
+        words = words.replace("aya", " ", 1) # 예를 들어 wayaoo를 w oo로 바꾸게 되면 후에 woo를 발음할 수 있다고 판단 안함.
         words = words.replace("ye", " ", 1)
         words = words.replace("woo", " ", 1)
         words = words.replace("ma", " ", 1)
