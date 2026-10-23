@@ -35,6 +35,7 @@ lines	result
 
 def solution(lines):
     world = [0] * 200 # 0으로 이뤄진 -100~100의 선분을 의미
+        # [0] * N의 결과는 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] 이런식으로 N개의 0이 들어간 리스트를 만들어줌
     cover = [False] * 200 # -100~100까지 중 겹친 부분을 의미
     
     for line in lines:
